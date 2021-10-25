@@ -16,7 +16,7 @@ namespace ScreenCapture
         {
             string fileName = ((System.Web.UI.Control)sender).Page.AppRelativeVirtualPath;
 
-            Task.Delay(new TimeSpan(0, 0, 2)).ContinueWith(o => { CaptureScreen.Capture(fileName); });
+            Task.Delay(new TimeSpan(0, 0, 1)).ContinueWith(o => { CaptureScreen.Capture(fileName); });
         }
     }
 }
